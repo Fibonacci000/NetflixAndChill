@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>NETFLIX & CHILL</title>
+    <link href='stylesheet.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:800" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" data-auto-replace-svg="nest"></script>
+
+
+
+</head>
+
+
+<body>
+
+
+    <nav>
+
+        <div class='nav1'>
+
+
+            <h1 class='logo'>NETFLIX&CHILL</h1>
+            <div class='links'>
+                <a href='https://www.netflix.com/browse' class='link'>Home</a>
+                <a href='https://www.netflix.com/browse/genre/83' class='link'>TV Shows</a>
+                <a href='https://www.netflix.com/browse/genre/34399' class='link'>Movies</a>
+                <a href='https://www.netflix.com/browse/genre/1592210' class='link'>Recently Added</a>
+                <a href='https://www.netflix.com/browse/my-list' class='link'>My List</a>
+            </div>
+            <div class='search'>
+
+              <i class="fas fa-search" type='submit' id='scope'></i>
+                <input type='text' class='searchbar' placeholder=' Titles, people, genres'>
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <section>
+        <div class='box'>
+            <div class='description'>
+
+                <h2>NETFLIX ORIGINAL</h2>
+                <h6 class='presents'>presents</h6>
+
+
+                <h1 class='zero'>Zero Gravity</h1>
+                <h6 class='para'>Lorem ipsum dolor sit, amet consectetur itaque</br>
+                    magnam
+                    altque, fugiat enim temporibus alias laudantium
+                    molestias</br> iusto, impedit quas quia?</h6>
+
+
+
+            </div>
+            <div class='ply-btn'>
+                <button id='ply'><i class="fas fa-play"></i> Play Episodes</button>
+                <button id='epi'><i class="fas fa-book-open"></i> Episodes</button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class='videoSection'>
+        <div class='table'>
+            <h3 class='catagory'>New Releases</h3>
+            <ul class="cards">
+
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+
+
+            </ul>
+        </div>
+        </br>
+        <div class='table'>
+            <h3 class='catagory'>Trending Now</h3>
+            <ul class="cards">
+
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+
+
+            </ul>
+        </div>
+        </br>
+        <div class='table'>
+            <h3 class='catagory'>Originals</h3>
+            <ul class="cards">
+
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+
+
+            </ul>
+        </div>
+        </br>
+        <div class='table'>
+            <h3 class='catagory'>Recently Added</h3>
+            <ul class="cards">
+
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+                <li> Your Content </li>
+
+
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+        //SEARCH BAR CLICK SHOW/HIDE
+        $('.searchbar').hide();
+        $(document).ready(function () {
+            $('#scope').click(function () {
+                $('.searchbar').toggle(250);
+            });
+        });
+        //BODY IMAGE FADE IN WHEN MOUSE MOVES.
+
+        $('.box').hide(0);
+
+        $(document).ready(function () {
+
+            $('body').mousemove(function () {
+
+                $('.box').fadeIn(1300);
+            });
+        });
+
+        //VIDEO SECTION FADE IN
+        $('.videoSection').hide(0);
+        $(document).ready(function () {
+            $('body').mousemove(function () {
+                $('.videoSection').fadeIn(3500);
+            })
+        })
+
+
+        //ANIMATION HOVER OVER CARDS.
+        $(document).ready(function() {
+            $('li').mouseenter(function() {
+                $(this).animate({
+                   
+                    width: '230px',
+                  
+                  
+
+                });
+            });
+        });
+
+            
+            
+        $(document).ready(function() {
+            $('li').mouseleave(function() {
+                $(this).animate({
+
+                  
+                    width: '120px',
+                    
+                    
+
+                });
+            });
+        });
+     
+//CAROUSEL FOR CARDS 
+
+
+     
+
+        //NAV LINKS ANIMATE WHEN HOVER
+        $(document).ready(function(e) {
+            $('.link').mouseenter(function(e) {
+                $(this).animate({
+                    margin: '15px'
+                });
+            });
+        });
+
+        $(document).ready(function(e) {
+            $('.link').mouseleave(function(e) {
+                $(this).animate({
+                    margin: '0px'
+                });
+            });
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>
